@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f1e3;
+            color: #4b3832;
+        }
+
+        header {
+            background: linear-gradient(90deg, #d4af37, #b8860b);
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .slider-section {
+            position: relative;
+            margin: 2em auto;
+            width: 100%;
+            height: 70vh;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slider {
+            display: flex;
+            animation: slide 25s infinite;
+            height: 100%;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            transition: transform 0.3s ease-in-out;
+            object-fit: cover;
+        }
+
+        .slider img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-100%); }
+            40% { transform: translateX(-200%); }
+            60% { transform: translateX(-300%); }
+            80% { transform: translateX(-400%); }
+            100% { transform: translateX(0); }
+        }
+
+        .btn {
+            background-color: #d4af37;
+            color: #fff;
+            border: none;
+            padding: 0.8em 1.5em;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #b8860b;
+        }
+
+        .products-section {
+            padding: 2em;
+            background-color: #fff;
+        }
+
+        .products-section h2 {
+            text-align: center;
+            color: #b8860b;
+            margin-bottom: 1em;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #f7f1e3;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            color: #4b3832;
+        }
+
+        .product-card p {
+            font-size: 1.1em;
+            color: #b8860b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #4b3832;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+       #about {
+        padding: 60px;
+            margin: 100px;
+          border: ridge #b8860b 10px;
+            text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SportsHub</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li style=" padding: 10px;
+                border: 15px;
+                color:#b8860b;
+                background-color:#d4af37;
+                border-radius: 5%;"><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About SportsHub</h2>
+        <p>SportsHub is your go-to destination for the best sports merchandise. We offer a wide variety of products to support your athletic passion and performance.</p>
+    </section>
+
+    <footer style="position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;">
+        <p>&copy; 2024 SportsHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
